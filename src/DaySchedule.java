@@ -21,8 +21,8 @@ public class DaySchedule {
 
 	//amount of extra time in minutes that the airlines are allowed to be logged 
 	//before and after the allotted time for a flight
-	private final int GRACEPERIOD = 10; 
-	private final int HOURLYCHARGE = 100; 
+	private final int GRACEPERIOD = 15; 
+	private final int HOURLYCHARGE = 10; 
 	private Flight[] buckets;	//hash table
 	
 
@@ -332,6 +332,10 @@ public class DaySchedule {
 			return "Gate 3";
 		case "GND1GTG004":
 			return "Gate 4";
+		case "GND1GTG005":
+			return "Gate 5";
+		case "GND1GTG006":
+			return "Gate 6";
 		default:
 			return "Invalid workstation";
 		}

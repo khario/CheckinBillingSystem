@@ -70,15 +70,15 @@ public class Flight implements Comparable<Flight>{
 	private void initDepTime(String time)
 	{
 		String dTimeString = LocalTime.parse(time,  
-				DateTimeFormatter.ofPattern("HH:mm:ss")).format(DateTimeFormatter.ofPattern("HH:mm"));
+				DateTimeFormatter.ofPattern("H:mm:ss")).format(DateTimeFormatter.ofPattern("HH:mm"));
 		depTime = LocalTime.parse(dTimeString);
 	}
 
 
 	private void initDates(String start, String end)
 	{
-		startDate = LocalDate.parse(start, DateTimeFormatter.ofPattern("MM/dd/yyyy"));
-		endDate = LocalDate.parse(end, DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+		startDate = LocalDate.parse(start, DateTimeFormatter.ofPattern("M/d/yyyy"));
+		endDate = LocalDate.parse(end, DateTimeFormatter.ofPattern("M/d/yyyy"));
 	}
 
 	public String toString()

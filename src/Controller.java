@@ -219,7 +219,7 @@ public class Controller {
 				e.printStackTrace();
 			} 
 			
-			builder.append("TOTAL CHARGE FOR " + code + ": " + "," + /*"$" +*/ airlineTotal + "\r\n\r\n\r\n");
+			builder.append("," + "," + "," + "," + "," + "," + "," + "TOTAL CHARGE FOR " + code + ": " + "," + /*"$" +*/ airlineTotal + "\r\n\r\n\r\n");
 		}
 		report = builder.toString();
 		
@@ -234,6 +234,13 @@ public class Controller {
 			e.printStackTrace();
 		}		
 	}
+
+
+	public DaySchedule[] getSchedules() {
+		return schedules;
+	}
+	
+	
 
 }
 	
